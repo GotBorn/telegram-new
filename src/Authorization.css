@@ -1,0 +1,21 @@
+
+.Background {
+	box-sizing: border-box;
+	margin: 0;
+	height: 300px;
+	width: 400px;
+	background-color: #0F89D0;
+}
+
+
+  .AuthorizationWindow {
+  background: #04d9f5;
+  position: relative;
+  margin-top: 500px;
+  padding: 50px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  }
