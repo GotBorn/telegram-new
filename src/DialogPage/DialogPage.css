@@ -1,0 +1,29 @@
+.main-wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+    background: blueviolet;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 100%;
+}
+
+.left-container {     
+    flex: 1
+}
+.topics-container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px; /* возможно следйет убрать закругление*/
+    padding: 10px;
+    background-color: whitesmoke;
+    height: calc(100% - 20px);
+}
+
+.right-container {
+    display: flex; /*почему оно не наследует?????????*/
+    flex-direction: column; 
+    flex: 2;
+    border-radius: 10px;
+}

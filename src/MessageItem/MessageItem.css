@@ -1,0 +1,15 @@
+.message-item {
+    /*background-color: chocolate;*/
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    max-width: 70%;
+}
+.mine {
+    align-self: flex-end;
+    background-color: chocolate;
+}
+.companion {
+    align-self: flex-start;
+    background-color: rgb(33, 126, 126)
+}
