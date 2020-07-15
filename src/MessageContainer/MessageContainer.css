@@ -1,0 +1,13 @@
+.messages-field {
+    flex: 21 21 88%;
+    display: flex;
+    flex-direction: column;
+    background-color: cadetblue;
+    border-radius: inherit;
+    padding: 5px;
+    /*max-height: 93%;*/
+    overflow: auto;
+}
+.messages-field::-webkit-scrollbar {
+    width: 0px;
+}
