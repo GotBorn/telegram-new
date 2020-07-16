@@ -5,3 +5,10 @@ html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
 }
+#root {
+    margin: 0;
+    padding: 0;
+    background: #0e1621;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;   
+}

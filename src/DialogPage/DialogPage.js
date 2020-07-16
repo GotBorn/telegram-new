@@ -1,27 +1,22 @@
 import React from 'react';
 import './DialogPage.css';
-import {getMessages, addMessage} from "../Backend/backend";
-import {MessageContainer} from "../MessageContainer/MessageContainer"
-//import {addMessage} from '/backend/backend.js'
+//import {getMessages, addMessage} from "../Backend/backend";
+import CompanionNameContainer from "../CompanionNameContainer/CompanionNameContainer.js"
+import MessageContainer from "../MessageContainer/MessageContainer"
+import NewMessageForm from "../NewMessageForm/NewMessageForm"
 export default class DialogPage extends React.Component {
     constructor(props) {
-        super(props); // вызываю конструктор для пропсов из материнского класса
+        super(props); // login, token
         this.state = {
-            messagesList: [] // тут должен быть "запрос" на сервер для загрузки истории сообщений
+            companionName: "bot1",
+            currentDialogID: ""
         }
-        this.loadMessages = this.loadMessages.bind(this);
-    }
-    loadMessages(token) {
-        this.setState({messagesList: getMessages(this.props.token)}); // заглушка для эмуляции бэкенда
-        //getMessages(this.props.token);
-    }
-    componentDidMount(token) {
-        /*this.setState({messagesList: getMessages(this.props.token)});*/
-        this.loadMessages(token);
+      //  this.loadMessages = this.loadMessages.bind(this);
     }
     render(){
-        let {messagesList} = this.state;
+     //   let {messagesList} = this.state;
         let {login} = this.props;
+        let {companionName, currentDialogID} = this.state;
         return(
             <div className="main-wrap">
                 <div className="left-container">
@@ -30,12 +25,11 @@ export default class DialogPage extends React.Component {
                     </div>
                 </div>
                 <div className="right-container">
-                    <CompanionNameContainer />
-                    <MessageContainer messagesList={messagesList} login={login}/>
+                    <CompanionNameContainer companionName={companionName}/>
+                    <MessageContainer login={login} companionName={companionName} currentDialogID ={currentDialogID}/>
                     <NewMessageForm />
                 </div>   
             </div> 
         );
     }
-
 } 

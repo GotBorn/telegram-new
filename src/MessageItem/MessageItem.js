@@ -1,11 +1,11 @@
-import React from "React";
+import React from "react";
 import "./MessageItem.css";
 
 export function MessageItem(props) {
-    let {messageID, messageData, login} = props;
-    let className = "message-item " + (messageData.author === login ? "mine" : "companion");
+    let {key, messageData, login} = props;
+    let className = "message-item " + (messageData.sender === login ? "mine" : "companion");
     return(
-        <div key={messageID}  className={className}>
+        <div key={key}  className={className}>
             {messageData.text}
         </div>   
     );

@@ -1,16 +1,16 @@
-import React from "React";
+import React from "react";
 import "./CompanionNameContainer.css";
 export default class CompanionNameContainer extends React.Component {
     constructor(props) {
-        super(props);
+        super(props); // companionName
         this.state = {
             isOnline: true // пока что не используется
         };
     }
-    render(){
+    render() {
         return(
             <div className="companion-name-container">
-                {props.}
+                {this.props.companionName}
             </div>
         );
     }

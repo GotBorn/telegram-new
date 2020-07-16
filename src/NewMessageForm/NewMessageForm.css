@@ -1,0 +1,17 @@
+.new-message-form {
+    border-radius: inherit;
+    display: flex;
+    flex: 2 2 8%;
+    background-color: red;
+}
+
+.text-input {
+    margin: 5px;
+    border-radius: inherit;
+    flex: 6;
+}
+.submit-button {
+    margin: 5px;
+    border-radius: inherit;
+    flex: 1;
+}

@@ -1,0 +1,10 @@
+.companion-name-container {
+    /* margin: 0 auto;*/
+     flex: 2 2 4%;
+     /*max-height: 4%;*/
+     padding: 5px;
+     background-color: chocolate;
+     border-radius: inherit;
+     font-size: x-large;
+     text-align: center;
+ }
