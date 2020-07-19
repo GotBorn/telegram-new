@@ -10,7 +10,9 @@ export default class CompanionNameContainer extends React.Component {
     render() {
         return(
             <div className="companion-name-container">
-                {this.props.companionName}
+                <span className="text-vertical-align-center">
+                    {this.props.companionName}  
+                </span>
             </div>
         );
     }

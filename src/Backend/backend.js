@@ -1,72 +1,40 @@
-let messagesList = [{ messageID: "202061821527", text: "message1", sender: "bot"},
-                    { messageID: "202061821533", text: "message2", sender: "alex"},
-                    /*{ messageID: "202061821544", text: "message3", sender: "alex"},
-                    { messageID: "202061821546", text: "message4", sender: "bot"},
-                    { messageID: "202061821550", text: "message55", sender: "bot"}*/];
-
-let usersDB = [{login: "alex", password: "12345"},
-               {login: "bot", password: "qwerty"}]
+let usersDB = [{ID: "971081011204950515253"}, // login: "alex", password: "12345"
+               {ID: "98111116113119101114116121"}]; // login: "bot", password: "qwerty"
+let messagesList = [{ messageID: "202061821527", text: "Здравствуй, я демонстрацмонный бот, который будет повторять за вами сообщения", sender: "bot"},
+                    { messageID: "202061821533", text: "Демонстрационное сообщение", sender: "alex"},
+               /*{ messageID: "202061821544", text: "message3", sender: "alex"},
+               { messageID: "202061821546", text: "message4", sender: "bot"},
+               { messageID: "202061821550", text: "message55", sender: "bot"}*/];
 
 function getMessageID() { // генерирует уникальный ID для сообщения
     let currentDate = new Date();
     return currentDate.getUTCFullYear().toString() + currentDate.getUTCMonth().toString() + currentDate.getUTCDate().toString() +
     currentDate.getUTCHours().toString() + currentDate.getUTCMinutes().toString() + currentDate.getUTCSeconds().toString();
 }
-
-export function addMessage(author, text, dialogID) { // dialogID пока что не используется
-    /*messagesList = messagesList. + [{
-        messageID: getMessageID(),
-        text: text,
-        sender: author
-    }];*/
+function addMessage(author, text) {
     messagesList.push({
         messageID: getMessageID(),
         text: text,
         sender: author
     });
-    alert(messagesList);
 }
-
-let test = 10;
-
-export function func() {
-    test++;
-    return test;
+export function sendMessage(author, text) {
+    addMessage(author, text);
+    addMessage("bot", text);
 }
-
-/*
-function getRandomInt(min, max) {
-    return Math.floor(Math.random() * (max - min)) + min;
-}*/
-
-
-export function getMessages(currentDialogID) { // не доделано, пока что токен тут даже не используется
-    console.log(messagesList.toString);
-    /*alert(messagesList);*/
+function getUserID(name, password) {
+    return Array.from(name + password, currentLetter => currentLetter.charCodeAt()).join("");
+}
+export function getToken(name, password) {
+    let userID = getUserID(name, password);
+    if(usersDB.some((item)=>{return userID === item.ID})) {
+        let currentDate = new Date();
+        return currentDate.getUTCHours().toString() + currentDate.getUTCMinutes().toString() + currentDate.getUTCSeconds().toString();
+    }
+    else {
+        return "";
+    }
+}
+export function getMessages() {
     return messagesList;
 }
-/*
-export function addMessage(author, text, dialogID) {
-
-
-    messagesList.push(newMessage);
-}*/
-/*
-export function getToken(name, password) {
-    if (usersDB.includes({login: name,  password: password})){
-        return(name+password);
-    }
-    return null;
-}
-
-class Dialog {
-    constructor(firstUserName, secondUserName){
-        this.dialogID = (firstUserName < secondUserName)
-    }
-}
-/*
-class User {
-    constructor(login, password) {
-
-    }
-}*/

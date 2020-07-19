@@ -1,16 +1,6 @@
 import React from "react"
-import {addMessage, func} from "../Backend/backend"
+import {sendMessage} from "../Backend/backend"
 import  "./NewMessageForm.css"
-
-/*
-export default function NewMessageForm(props) {
-    return (
-        <form class="new-message-form">
-                <textarea class="text-input" placeholder="Написать сообещние..."></textarea>
-                <button class="submit-button" type="submit">Отправить</button>
-        </form>
-    );
-}*/
 
 export default class NewMessageForm extends React.Component {
     constructor(props) {
@@ -25,11 +15,11 @@ export default class NewMessageForm extends React.Component {
         this.setState({value: event.target.value});
     }
     handleSubmit(event) {
-        /*alert("Hello");*/
-        /*event.preventDefault();*/
-       /* alert("Hello");*/
-       alert(func());/*
-        addMessage(this.props.author, this.state.value, this.props.dialogID);*/
+        event.preventDefault();
+        sendMessage(this.props.author, this.state.value);
+        this.setState({
+            value: ''
+        });
     }
     render() {
         return(

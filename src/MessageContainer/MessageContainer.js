@@ -15,9 +15,7 @@ export default class MessageContainer extends React.Component {
         this.setState({messagesList: getMessages(this.props.currentDialogID)}); // заглушка для эмуляции бэкенда
     }
     componentDidMount() {
-        this.loadMessages();
-        /*
-        setInterval(this.loadMessages, 100);*/
+        setInterval(this.loadMessages, 100);
     }
     render() {
         let {messagesList} = this.state;

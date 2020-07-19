@@ -1,5 +1,5 @@
 .main-wrap {
-    max-width: 1200px;
+    max-width: 1200px; /*1200*/
     margin: 0 auto;
     padding: 0 10px;
     background: blueviolet;
@@ -26,4 +26,5 @@
     flex-direction: column; 
     flex: 2;
     border-radius: 10px;
+    max-width: 100%;
 }
