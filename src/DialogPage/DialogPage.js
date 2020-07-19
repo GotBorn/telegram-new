@@ -9,25 +9,25 @@ export default class DialogPage extends React.Component {
         super(props); // login, token
         this.state = {
             companionName: "bot1",
-            currentDialogID: ""
+            dialogID: ""
         }
       //  this.loadMessages = this.loadMessages.bind(this);
     }
     render(){
      //   let {messagesList} = this.state;
         let {login} = this.props;
-        let {companionName, currentDialogID} = this.state;
+        let {companionName, dialogID} = this.state;
         return(
             <div className="main-wrap">
-                <div className="left-container">
+               { /*<div className="left-container">
                     <div className ="topics-container">
                         ЗАГЛУШКА, ТУТ БУДЕТ СПИСОК ДИАЛОГОВ
-                    </div>
-                </div>
+                    </div> 
+        </div> */}
                 <div className="right-container">
                     <CompanionNameContainer companionName={companionName}/>
-                    <MessageContainer login={login} companionName={companionName} currentDialogID ={currentDialogID}/>
-                    <NewMessageForm />
+                    <MessageContainer login={login} companionName={companionName} dialogID ={dialogID}/>
+                    <NewMessageForm author={login} dialogID={dialogID}/>
                 </div>   
             </div> 
         );

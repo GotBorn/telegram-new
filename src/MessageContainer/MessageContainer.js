@@ -7,7 +7,7 @@ export default class MessageContainer extends React.Component {
     constructor(props) {
         super(props); // login, companionName, currentDialogID
         this.state = {
-            messagesList: [] // тут должен быть "запрос" на сервер для загрузки истории сообщений
+            messagesList: [] 
         }
         this.loadMessages = this.loadMessages.bind(this);
     }
@@ -15,7 +15,9 @@ export default class MessageContainer extends React.Component {
         this.setState({messagesList: getMessages(this.props.currentDialogID)}); // заглушка для эмуляции бэкенда
     }
     componentDidMount() {
-        setInterval(this.loadMessages, 1000);
+        this.loadMessages();
+        /*
+        setInterval(this.loadMessages, 100);*/
     }
     render() {
         let {messagesList} = this.state;

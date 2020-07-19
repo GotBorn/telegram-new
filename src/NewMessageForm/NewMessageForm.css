@@ -5,13 +5,30 @@
     background-color: red;
 }
 
+.new-message-form * {
+    border-width: 2px;
+    border-style: outset;
+    border-radius: inherit;
+   /* border-color: -internal-light-dark()*/;
+}
+
 .text-input {
+    padding: 5px;
     margin: 5px;
     border-radius: inherit;
-    flex: 6;
+    flex: 8;
+    resize: none;
+}
+.text-input::-webkit-scrollbar {
+    width: 0px;
 }
 .submit-button {
+    max-width: 150px;
     margin: 5px;
     border-radius: inherit;
-    flex: 1;
+    flex: 2;
+}
+.submit-button:hover {
+    background-color: rgb(97, 97, 97);
+    transition: background-color 0.09s linear;
 }
