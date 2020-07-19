@@ -1,25 +1,27 @@
 .AuthorizationWindow {
     background-color: #FFFFFF;
-    width: 35vw;
-    height: 25vh;
+    width: 30vw;
+    height: 35vh;
     margin: 0 auto;
     margin-top: 20vh;
     padding-top: 1vh;
-    font-size: 125%;
+    font-size: 130%;
     color: #39A5DB;
     text-align: center;
     border-radius: 10px;
   }
 
   #LoginConteiner {
-    width: 25vw;
+    height: 3vh;
+    width: 20vw;
     border-radius: 5px;
     border-style: solid;
     border-color: #39A5DB;
   }
 
   #PasswordConteiner {
-    width: 25vw;
+    height: 3vh;
+    width: 20vw;
     border-radius: 5px;
     border-style: solid;
     border-color: #39A5DB;
@@ -27,18 +29,12 @@
 
   #AuthButton {
     background-color: #FFFFFF;
-      margin: 2vh;
+      margin: 4vh;
       width: 10vw;
-      height: 3vh;
+      height: 4vh;
       font-size: 80%;
       color: #39A5DB;
       border-style: solid;
       border-color: #39A5DB;
-      border-radius: 5px;
-  }
-
-  p {
-      margin: 1.5vh;
-      padding:0;
-
+      border-radius: 5px;  
   }
