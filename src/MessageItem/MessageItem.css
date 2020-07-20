@@ -1,5 +1,4 @@
 .message-item {
-    /*background-color: chocolate;*/
     overflow-wrap: break-word;
     padding: 5px;
     margin: 5px;
@@ -14,9 +13,7 @@
 }
 .mine {
     align-self: flex-end;
-   /* background-color: chocolate;*/
 }
 .companion {
     align-self: flex-start;
-   /* background-color: rgb(33, 126, 126)*/
 }

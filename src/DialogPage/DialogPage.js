@@ -1,6 +1,5 @@
 import React from 'react';
 import './DialogPage.css';
-//import {getMessages, addMessage} from "../Backend/backend";
 import CompanionNameContainer from "../CompanionNameContainer/CompanionNameContainer.js"
 import MessageContainer from "../MessageContainer/MessageContainer"
 import NewMessageForm from "../NewMessageForm/NewMessageForm"
