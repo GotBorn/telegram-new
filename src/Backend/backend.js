@@ -1,6 +1,6 @@
 let usersDB = [{ID: "971081011204950515253"}, // login: "alex", password: "12345"
                {ID: "98111116113119101114116121"}]; // login: "bot", password: "qwerty"
-let messagesList = [{ messageID: "202061821527", text: "Здравствуй, я демонстрацмонный бот, который будет повторять за вами сообщения", sender: "bot"},
+let messagesList = [{ messageID: "202061821527", text: "Здравствуйте, я демонстрационный бот, который будет повторять за вами сообщения", sender: "bot"},
                     { messageID: "202061821533", text: "Демонстрационное сообщение", sender: "alex"},
                /*{ messageID: "202061821544", text: "message3", sender: "alex"},
                { messageID: "202061821546", text: "message4", sender: "bot"},

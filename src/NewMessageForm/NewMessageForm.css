@@ -1,18 +1,19 @@
 .new-message-form {
+    padding: 3px;
     border-radius: inherit;
     display: flex;
     flex: 2 2 8%;
-    background-color: red;
+    background-color: whitesmoke;
 }
 
 .new-message-form * {
     border-width: 2px;
     border-style: outset;
     border-radius: inherit;
-   /* border-color: -internal-light-dark()*/;
 }
 
 .text-input {
+    font-size: 14px;
     padding: 5px;
     margin: 5px;
     border-radius: inherit;
@@ -23,12 +24,15 @@
     width: 0px;
 }
 .submit-button {
+    font-size: 85%;
+    color: #03678f;
     max-width: 150px;
     margin: 5px;
     border-radius: inherit;
     flex: 2;
 }
-.submit-button:hover {
+.submit-button:hover {    
     background-color: rgb(97, 97, 97);
+    background-color: #8BD3EE;
     transition: background-color 0.09s linear;
 }

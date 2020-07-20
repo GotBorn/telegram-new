@@ -11,10 +11,8 @@ export default class DialogPage extends React.Component {
             companionName: "Echo Bot",
             dialogID: ""
         }
-      //  this.loadMessages = this.loadMessages.bind(this);
     }
     render(){
-     //   let {messagesList} = this.state;
         let {login} = this.props;
         let {companionName, dialogID} = this.state;
         return(

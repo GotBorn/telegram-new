@@ -1,14 +1,19 @@
 html, body {
     margin: 0;
     padding: 0;
-    background: #0e1621;
+    background: #39A5DB;
     height: 100%;
+    color: #057DAB;
+    color: #03678f;
     font-family: 'Roboto', sans-serif;
 }
 #root {
     margin: 0;
     padding: 0;
-    background: #0e1621;
+    background: #057DAB;
     height: 100%;
     font-family: 'Roboto', sans-serif;   
+}
+:focus {
+    outline: none;
 }

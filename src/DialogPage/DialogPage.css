@@ -1,8 +1,8 @@
 .main-wrap {
-    max-width: 1200px; /*1200*/
+    max-width: 800px; /*1200*/
     margin: 0 auto;
     padding: 0 10px;
-    background: blueviolet;
+    background: inherit;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -22,9 +22,16 @@
 }
 
 .right-container {
-    display: flex; /*почему оно не наследует?????????*/
+    display: flex;
     flex-direction: column; 
     flex: 2;
-    border-radius: 10px;
+    border-radius: 7px;
     max-width: 100%;
+}
+
+.right-container > * {
+    border-width: 1.5px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #057DAB;
 }

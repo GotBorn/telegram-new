@@ -26,7 +26,7 @@ export default class NewMessageForm extends React.Component {
             <form className="new-message-form">
             <textarea className="text-input" value={this.state.value} 
                 onChange={this.handleChange} /*onSubmit={this.handleSubmit}*/
-                placeholder="Написать сообещние...">
+                placeholder="Написать сообещение...">
             </textarea>
             <button className="submit-button" onClick={this.handleSubmit} type="submit">Отправить</button>
         </form>  

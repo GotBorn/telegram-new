@@ -1,0 +1,54 @@
+.center-container {
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 0;
+    background: inherit;
+    height: 100%;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center
+}
+.authorization-block {
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px; /*убрать*/
+    text-align: center;
+    border-radius: 10px;
+}
+form {
+    color: #057DAB;
+}
+fieldset {
+    margin: 10px;
+    border: none;
+}
+fieldset *{
+    margin: 5px;
+}
+label {
+    color: inherit;
+    font-size: 120%;
+    display: block;
+}
+input {
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #057DAB;
+    padding: 0 5px;
+}
+#user-login, #user-password {
+    height: 25px;
+    width: 70%;
+    min-width: 200px;
+}
+#auth-button {
+    font-size: 100%;
+    background-color:white; 
+    width: 150px;
+    padding: 7px;
+    color: inherit;
+}
+#auth-button:hover{
+    background-color: #8BD3EE;
+    transition: background-color 0.09s linear;
+}

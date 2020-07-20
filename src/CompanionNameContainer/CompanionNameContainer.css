@@ -1,13 +1,13 @@
 .companion-name-container {
     flex: 2 2 4%;
     padding: 5px;
-    background-color: chocolate;
+    background-color: white;
     border-radius: inherit;
     font-size: 25.89px;
     text-align: center;
+    color: #03678f;
  }
  .text-vertical-align-center {
-    /*display:inline-block;*/
     height:100%;
     width:0px;
     overflow:hidden;
